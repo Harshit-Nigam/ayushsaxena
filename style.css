@@ -61,7 +61,7 @@ body {
     backface-visibility: hidden;
     height: 100%;
     /* background: linear-gradient(-45deg, red, blue); */
-background-color: #0d0202;
+background-color: #000000;
 
 /* font-family: 'Kalam', cursive; */
 font-family: 'Montserrat', sans-serif;
@@ -358,7 +358,7 @@ nav .fa-solid {
 .subtitle {
     font-size: 55px;
     font-weight: 600;
-    color: rgb(214, 46, 46);
+    color: rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
@@ -525,7 +525,7 @@ p {
 }
 
 .contact-left {
-    flex-basis: 35%;
+    flex-basis: 33%;
 
 
 }
@@ -672,4 +672,7 @@ p{
 }
 .shop1, .shop2{
     color: #ff004f;
+}
+#lololo{
+color: #f4efef;
 }

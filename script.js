@@ -1,25 +1,15 @@
-console.log("script running...")
-document.querySelector('.cross').style.display = 'none';
-document.querySelector('.ham').addEventListener("click", () => {
-    document.querySelector('.sidebar').classList.toggle('sidebargo');
+const showBtn = document.querySelector('.navBtn');
+const topNav = document.querySelector('.top-nav');
 
-    // if (document.querySelector('.sidebar').classList.toggle('sidebargo')) {
-    //     document.querySelector('.ham').style.display = 'inline';
-    //     document.querySelector('.cross').style.display = 'none';
-
-    // }
-    // else {
-    //     document.querySelector('.ham').style.display = 'none';
-    //     document.querySelector('.cross').style.display = 'inline';
-    // }
+showBtn.addEventListener('click', function(){
+    if(topNav.classList.contains('showNav')){
+        topNav.classList.remove('showNav');
+        showBtn.innerHTML = '<i class = "fas fa-bars"></i>';
+    } else {
+        topNav.classList.add('showNav');
+        showBtn.innerHTML = '<i class = "fas fa-times"></i>';
+    }
 });
 
-
-var sidemenu = document.getElementById("sidemenu");
-
-function openmenu(){
-    sidemenu.style.right = "0";
-}
-function closemenu(){
-    sidemenu.style.right = "-200px";
-}
+/* Lightbox */
+var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
